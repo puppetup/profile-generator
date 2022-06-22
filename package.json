@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/puppetup/profile-generator#readme",
   "dependencies": {
-    "inquirer": "^6.5.2",
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {
     "jest": "^28.1.1"
   }
 }
