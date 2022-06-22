@@ -1,0 +1,28 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "## Dir. Structure . ├── __tests__/             //jest tests │   ├── Employee.test.js │   ├── Engineer.test.js │   ├── Intern.test.js │   └── Manager.test.js ├── dist/                  // rendered output (HTML) and CSS style sheet       ├── lib/                   // classes ├── src/                   // template helper code  ├── .gitignore             // indicates which folders and files Git should ignore ├── index.js               // runs the application └── package.json",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puppetup/profile-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puppetup/profile-generator/issues"
+  },
+  "homepage": "https://github.com/puppetup/profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^6.5.2",
+    "jest": "^28.1.1"
+  }
+}
