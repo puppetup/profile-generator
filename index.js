@@ -1,7 +1,10 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
 const { create } = require('domain')
+const renderTeam = require("./src/html-templates")
 
 const teamMemberObjArr = []
 
@@ -95,11 +98,11 @@ const init = () => {
                     },
                 ])
                 .then(answers => {
-                    const manager = new Engineer(
+                    const engineer = new Engineer(
                         answers.id,
                         answers.name,
                         answers.email,
-                        answers.officeNumber
+                        answers.github
                     );
                     teamMemberObjArr.push(engineer);
                     addEmployees();
@@ -132,7 +135,7 @@ const init = () => {
                     },
                 ])
                 .then(answers => {
-                    const manager = new Intern(
+                    const intern = new Intern(
                         answers.id,
                         answers.name,
                         answers.email,
@@ -142,6 +145,16 @@ const init = () => {
                     addEmployees();
 
                 });
+    }
+
+    function buildTeam() {
+        fs.writeFile('./dist/index.html', renderTeam(teamMemberObjArr), (err) => {
+            if (err)
+                console.log(err);
+                else {
+                    console.log('You successfully added your team members!')
+                }
+        })
     }
 
     createManager()

@@ -38,3 +38,5 @@ THEN I exit the application, and the HTML is generated
 1hr 19 pseudo code starts
 
 stopped @ 1:52:39
+
+~2:10:00 explanation
