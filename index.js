@@ -14,13 +14,13 @@ const init = () => {
         .prompt([
                     {
                         type: 'input',
-                        message: 'What is the Managers  id?',
-                        name: 'id',
+                        message: 'What is the Managers name?',
+                        name: 'name',
                     },
                     {
                         type: 'input',
-                        message: 'What is the Managers name?',
-                        name: 'name',
+                        message: 'What is the Managers  id?',
+                        name: 'id',
                     },
                     {
                         type: 'input',
@@ -35,8 +35,8 @@ const init = () => {
                 ])
                 .then(answers => {
                     const manager = new Manager(
-                        answers.id,
                         answers.name,
+                        answers.id,
                         answers.email,
                         answers.officeNumber
                     );
@@ -78,13 +78,13 @@ const init = () => {
         .prompt([
                     {
                         type: 'input',
-                        message: 'What is the Engineers  id?',
-                        name: 'id',
+                        message: 'What is the Engineers name?',
+                        name: 'name',
                     },
                     {
                         type: 'input',
-                        message: 'What is the Engineers name?',
-                        name: 'name',
+                        message: 'What is the Engineers  id?',
+                        name: 'id',
                     },
                     {
                         type: 'input',
@@ -99,8 +99,8 @@ const init = () => {
                 ])
                 .then(answers => {
                     const engineer = new Engineer(
-                        answers.id,
                         answers.name,
+                        answers.id,
                         answers.email,
                         answers.github
                     );
@@ -115,13 +115,13 @@ const init = () => {
         .prompt([
                     {
                         type: 'input',
-                        message: 'What is the Interns id?',
-                        name: 'id',
-                    },
-                    {
-                        type: 'input',
                         message: 'What is the Interns name?',
                         name: 'name',
+                    },
+                    {
+                        type: 'input',  
+                        message: 'What is the Interns id?',
+                        name: 'id',
                     },
                     {
                         type: 'input',
@@ -136,8 +136,8 @@ const init = () => {
                 ])
                 .then(answers => {
                     const intern = new Intern(
-                        answers.id,
                         answers.name,
+                        answers.id,
                         answers.email,
                         answers.school
                     );
