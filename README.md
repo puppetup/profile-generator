@@ -16,3 +16,4 @@ HTML, CSS, Bootstrap, Javascript, Node.js
 
 ## Preview
 
+[Link to a preview video of the project via youtube](https://youtu.be/9XAJPVgEyro)
